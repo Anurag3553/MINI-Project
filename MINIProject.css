@@ -1,0 +1,169 @@
+.main_box{
+    height: 100vh;
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+
+.butn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+
+.side_bar{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    transition: all 0.5s linear;
+}
+
+.side_bar .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.8);
+}
+
+.side_bar .logo a{
+    position: absolute;
+    left: 80px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side_bar .btn_two i {
+    color: grey;
+    font-size: 30px;
+    line-height: 60px;
+    position: absolute;
+    left: 250px;
+    cursor: pointer;
+}
+
+.side_bar .menu{
+    color: white;
+    position: absolute;
+    width:100%;
+    top: 80px;
+}
+
+.side_bar .menu li{
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.side_bar .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.side_bar .menu i{
+    padding-right: 10px;
+}
+
+.side_bar .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 30px;
+}
+
+.side_bar .social_media i{
+    color: white;
+    opacity: 0.8;
+    padding: 0 5px;
+    cursor: pointer;
+    
+}
+
+#check{
+    display: none;
+}
+
+.side_bar .menu li:hover{
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.8);
+    transition: 1s;
+    transform: translate(5px, 5px);
+
+}
+
+
+.butn_one i:hover{
+    transition: 1s;
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    transition: 1s;
+    font-size: 40px;
+    
+}
+.side_bar .social_media i:hover{
+    transition: 1s;
+    opacity: 3;
+    transform: scale(1.5);
+    box-shadow: 0 0px 6px rgba(255, 255, 255, 0.8);
+    
+}
+
+#check:checked ~ .side_bar{
+    transition: 1s;
+    left: 0;
+}
+
+#check:checked ~ .butn_one i{
+    opacity: 0;
+}
+
+#check:checked ~ .side_bar .btn_two i{
+    opacity: 1;
+}
+
+.pet{
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+    margin: 50px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0px 6px rgba(255, 255, 255, 0.8);
+}
+
+p{
+    padding-top: 10px;
+}
+img{
+    height: 35%;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+.card{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 280px;
+    transition: 1s;
+}
+#check:checked ~ .card{
+    transition: 1s;
+    left: 400px;
+}
